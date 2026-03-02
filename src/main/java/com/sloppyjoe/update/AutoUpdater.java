@@ -9,17 +9,18 @@ import net.fabricmc.fabric.api.client.networking.v1.ClientPlayConnectionEvents;
 import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.text.Text;
 
-import java.io.*;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.Reader;
 import java.net.HttpURLConnection;
 import java.net.URI;
 import java.nio.file.*;
 
 public class AutoUpdater {
 
-    private static final String CONFIG_DIR     = "sloppyjoe";
-    private static final String CONFIG_FILE    = "updater.json";
+    private static final String GITHUB_REPO    = "forbidndestroyr/SloppyJoe";
     private static final String STAGING_SUBDIR = "updates";
-    private static final String PLACEHOLDER    = "YOUR_USERNAME/SloppyJoe";
 
     private static volatile boolean updatePending  = false;
     private static volatile String  pendingVersion = null;
@@ -80,17 +81,12 @@ public class AutoUpdater {
     // -------------------------------------------------------------------------
 
     private static void checkAndDownload() {
-        JsonObject config = readOrCreateConfig();
-        if (config == null) return;
-
-        String repo = config.get("github_repo").getAsString();
-
         String currentVersion = FabricLoader.getInstance()
                 .getModContainer(SloppyJoeMod.MOD_ID)
                 .map(mc -> mc.getMetadata().getVersion().getFriendlyString())
                 .orElse("0.0.0");
 
-        JsonObject release = fetchLatestRelease(repo);
+        JsonObject release = fetchLatestRelease(GITHUB_REPO);
         if (release == null) return;
 
         String latestTag = release.get("tag_name").getAsString();
@@ -120,7 +116,7 @@ public class AutoUpdater {
         long   assetSize   = targetAsset.get("size").getAsLong();
 
         // Staging: config/sloppyjoe/updates/<assetName>
-        Path stagingDir = FabricLoader.getInstance().getConfigDir().resolve(CONFIG_DIR).resolve(STAGING_SUBDIR);
+        Path stagingDir = FabricLoader.getInstance().getConfigDir().resolve("sloppyjoe").resolve(STAGING_SUBDIR);
         try {
             Files.createDirectories(stagingDir);
         } catch (IOException e) {
@@ -160,48 +156,6 @@ public class AutoUpdater {
         updatePending  = true;
         pendingVersion = versionLabel;
         SloppyJoeMod.LOGGER.info("[AutoUpdater] Update v{} staged — will install on next exit.", versionLabel);
-    }
-
-    /** Read config/sloppyjoe/updater.json; auto-create with defaults on first run. Returns null to abort. */
-    private static JsonObject readOrCreateConfig() {
-        Path configFile = FabricLoader.getInstance().getConfigDir()
-                .resolve(CONFIG_DIR).resolve(CONFIG_FILE);
-        try {
-            Files.createDirectories(configFile.getParent());
-        } catch (IOException e) {
-            SloppyJoeMod.LOGGER.warn("[AutoUpdater] Could not create config dir: {}", e.getMessage());
-            return null;
-        }
-
-        if (!Files.exists(configFile)) {
-            JsonObject defaults = new JsonObject();
-            defaults.addProperty("github_repo", PLACEHOLDER);
-            defaults.addProperty("enabled", true);
-            try (Writer w = Files.newBufferedWriter(configFile)) {
-                w.write(defaults.toString());
-                SloppyJoeMod.LOGGER.info("[AutoUpdater] Created default config at {}. Set github_repo to enable updates.", configFile);
-            } catch (IOException e) {
-                SloppyJoeMod.LOGGER.warn("[AutoUpdater] Could not write default config: {}", e.getMessage());
-            }
-            return null; // placeholder repo → skip this run
-        }
-
-        try (Reader r = Files.newBufferedReader(configFile)) {
-            JsonObject obj = JsonParser.parseReader(r).getAsJsonObject();
-            if (!obj.get("enabled").getAsBoolean()) {
-                SloppyJoeMod.LOGGER.info("[AutoUpdater] Disabled via config.");
-                return null;
-            }
-            String repo = obj.get("github_repo").getAsString();
-            if (repo.equals(PLACEHOLDER)) {
-                SloppyJoeMod.LOGGER.info("[AutoUpdater] Placeholder repo — skipping update check.");
-                return null;
-            }
-            return obj;
-        } catch (Exception e) {
-            SloppyJoeMod.LOGGER.warn("[AutoUpdater] Could not read config: {}", e.getMessage());
-            return null;
-        }
     }
 
     /** GET https://api.github.com/repos/{repo}/releases/latest and parse JSON. */
