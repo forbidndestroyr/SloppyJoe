@@ -1,4 +1,4 @@
-fun minecraft mod with some random features.
+fun minecraft mod with some random features. download the jar once and it updates itself automatically.
 
 breakdown:
 1. sloppy joe villager: sells sloppy joes. has a special workbench
