@@ -30,3 +30,4 @@ Crafting Breakdown:
   / = end of grid line in crafting table
   space = empty frame
   thank you to my friend Josh for making this cool grid.
+ 
