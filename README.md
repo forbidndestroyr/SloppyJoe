@@ -5,7 +5,7 @@ breakdown:
 2. perspective lens: allows you to shrink/grow blocks and mobs. only cosmetically grows blocks past a 5x scale and below a 1x scale.
 3. horse planes: lets you fly a horse.
 
-## Crafting
+## Crafting Recipes
 
 **Shapeless**
 
@@ -26,4 +26,4 @@ breakdown:
 | Horse Plane Ticket | ` I  / PFP /  I ` | I = Iron Ingot, P = Paper, F = Feather |
 | Joe Counter | `PPP / PBP / PPP` | P = Oak Planks, B = Bread |
 
-thank you to my friend Josh for the original table layout.
+thank you to my friend Josh for the very cool table layout.
