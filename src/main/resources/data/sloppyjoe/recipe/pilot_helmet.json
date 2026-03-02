@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "equipment",
+    "pattern": [
+        "III",
+        "ILI"
+    ],
+    "key": {
+        "I": {"item": "minecraft:iron_ingot"},
+        "L": {"item": "minecraft:leather"}
+    },
+    "result": {
+        "id": "sloppyjoe:pilot_helmet",
+        "count": 1
+    }
+}

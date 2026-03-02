@@ -1,0 +1,109 @@
+{
+    "textures": {
+        "leather": "minecraft:block/brown_terracotta",
+        "dark":    "minecraft:block/spruce_planks"
+    },
+    "elements": [
+        {
+            "comment": "Main crown (dome top of helmet)",
+            "from": [2, 8, 2],
+            "to":   [14, 15, 14],
+            "faces": {
+                "north": { "texture": "#leather" },
+                "south": { "texture": "#leather" },
+                "up":    { "texture": "#leather" },
+                "down":  { "texture": "#leather" },
+                "east":  { "texture": "#leather" },
+                "west":  { "texture": "#leather" }
+            }
+        },
+        {
+            "comment": "Left ear flap",
+            "from": [0, 3, 3],
+            "to":   [2, 11, 13],
+            "faces": {
+                "north": { "texture": "#leather" },
+                "south": { "texture": "#leather" },
+                "up":    { "texture": "#leather" },
+                "down":  { "texture": "#leather" },
+                "west":  { "texture": "#leather" }
+            }
+        },
+        {
+            "comment": "Right ear flap",
+            "from": [14, 3, 3],
+            "to":   [16, 11, 13],
+            "faces": {
+                "north": { "texture": "#leather" },
+                "south": { "texture": "#leather" },
+                "up":    { "texture": "#leather" },
+                "down":  { "texture": "#leather" },
+                "east":  { "texture": "#leather" }
+            }
+        },
+        {
+            "comment": "Back neck flap",
+            "from": [2, 3, 14],
+            "to":   [14, 9, 16],
+            "faces": {
+                "south": { "texture": "#leather" },
+                "up":    { "texture": "#leather" },
+                "down":  { "texture": "#leather" },
+                "east":  { "texture": "#leather" },
+                "west":  { "texture": "#leather" }
+            }
+        },
+        {
+            "comment": "Goggle band across the front",
+            "from": [2, 8, 0],
+            "to":   [14, 11, 3],
+            "faces": {
+                "north": { "texture": "#dark" },
+                "up":    { "texture": "#dark" },
+                "down":  { "texture": "#dark" },
+                "east":  { "texture": "#dark" },
+                "west":  { "texture": "#dark" }
+            }
+        },
+        {
+            "comment": "Small front chin/face guard trim",
+            "from": [2, 3, 0],
+            "to":   [14, 6, 2],
+            "faces": {
+                "north": { "texture": "#leather" },
+                "up":    { "texture": "#leather" },
+                "east":  { "texture": "#leather" },
+                "west":  { "texture": "#leather" }
+            }
+        }
+    ],
+    "display": {
+        "thirdperson_righthand": {
+            "rotation": [0, -90, 55],
+            "translation": [0, 4, 0.5],
+            "scale": [0.85, 0.85, 0.85]
+        },
+        "firstperson_righthand": {
+            "rotation": [0, -90, 25],
+            "translation": [1.13, 3.2, 1.13],
+            "scale": [0.68, 0.68, 0.68]
+        },
+        "ground": {
+            "translation": [0, 3, 0],
+            "scale": [0.5, 0.5, 0.5]
+        },
+        "gui": {
+            "rotation": [30, 225, 0],
+            "scale": [0.625, 0.625, 0.625]
+        },
+        "fixed": {
+            "rotation": [0, 0, 0],
+            "scale": [0.5, 0.5, 0.5]
+        },
+        "head": {
+            "rotation": [0, 0, 0],
+            "translation": [0, 0, 0],
+            "scale": [1, 1, 1]
+        }
+    }
+}

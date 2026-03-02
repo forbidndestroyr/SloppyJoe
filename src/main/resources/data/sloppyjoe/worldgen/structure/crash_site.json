@@ -1,0 +1,7 @@
+{
+  "type": "sloppyjoe:crash_site",
+  "biomes": "#sloppyjoe:has_structure/crash_site",
+  "step": "surface_structures",
+  "spawn_overrides": {},
+  "terrain_adaptation": "none"
+}

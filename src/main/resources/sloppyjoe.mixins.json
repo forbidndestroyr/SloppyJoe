@@ -1,0 +1,16 @@
+{
+    "required": true,
+    "package": "com.sloppyjoe.mixin",
+    "compatibilityLevel": "JAVA_21",
+    "mixins": [],
+    "client": [
+        "HorseEntityModelMixin",
+        "CameraMixin",
+        "HorsePlaneSneakMixin",
+        "LivingHorseEntityRenderStateMixin",
+        "AbstractHorseEntityRendererMixin"
+    ],
+    "injectors": {
+        "defaultRequire": 1
+    }
+}

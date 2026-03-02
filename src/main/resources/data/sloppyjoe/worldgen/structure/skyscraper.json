@@ -1,0 +1,7 @@
+{
+  "type": "sloppyjoe:skyscraper",
+  "biomes": "#sloppyjoe:has_structure/skyscraper",
+  "step": "surface_structures",
+  "spawn_overrides": {},
+  "terrain_adaptation": "none"
+}

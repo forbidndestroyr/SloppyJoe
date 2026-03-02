@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "building",
+    "pattern": [
+        "PPP",
+        "PBP",
+        "PPP"
+    ],
+    "key": {
+        "P": "minecraft:oak_planks",
+        "B": "minecraft:bread"
+    },
+    "result": {
+        "id": "sloppyjoe:joe_counter"
+    }
+}

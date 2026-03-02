@@ -1,0 +1,30 @@
+{
+    "schemaVersion": 1,
+    "id": "sloppyjoe",
+    "version": "${version}",
+    "name": "Sloppy Joe Mod",
+    "description": "Adds the Sloppy Joe food item and the Joe villager to Minecraft!",
+    "authors": [
+        "SloppyJoe"
+    ],
+    "contact": {},
+    "license": "MIT",
+    "environment": "*",
+    "entrypoints": {
+        "main": [
+            "com.sloppyjoe.SloppyJoeMod"
+        ],
+        "client": [
+            "com.sloppyjoe.client.SloppyJoeModClient"
+        ]
+    },
+    "mixins": [
+        "sloppyjoe.mixins.json"
+    ],
+    "depends": {
+        "fabricloader": ">=0.15.0",
+        "minecraft": "~1.21.4",
+        "java": ">=21",
+        "fabric-api": "*"
+    }
+}

@@ -1,0 +1,186 @@
+{
+    "textures": {
+        "frame":   "minecraft:block/iron_block",
+        "lens":    "minecraft:block/light_blue_stained_glass",
+        "leather": "minecraft:block/brown_terracotta",
+        "dark":    "minecraft:block/spruce_planks"
+    },
+    "elements": [
+        {
+            "comment": "Hat crown",
+            "from": [1, 10, 3],
+            "to":   [15, 17, 13],
+            "faces": {
+                "north": { "texture": "#leather" },
+                "south": { "texture": "#leather" },
+                "up":    { "texture": "#leather" },
+                "east":  { "texture": "#leather" },
+                "west":  { "texture": "#leather" }
+            }
+        },
+        {
+            "comment": "Left ear flap",
+            "from": [-1, 3, 3],
+            "to":   [1, 11, 13],
+            "faces": {
+                "north": { "texture": "#leather" },
+                "south": { "texture": "#leather" },
+                "up":    { "texture": "#leather" },
+                "down":  { "texture": "#leather" },
+                "west":  { "texture": "#leather" }
+            }
+        },
+        {
+            "comment": "Right ear flap",
+            "from": [15, 3, 3],
+            "to":   [17, 11, 13],
+            "faces": {
+                "north": { "texture": "#leather" },
+                "south": { "texture": "#leather" },
+                "up":    { "texture": "#leather" },
+                "down":  { "texture": "#leather" },
+                "east":  { "texture": "#leather" }
+            }
+        },
+        {
+            "comment": "Neck flap",
+            "from": [1, 3, 13],
+            "to":   [15, 9, 15],
+            "faces": {
+                "south": { "texture": "#leather" },
+                "up":    { "texture": "#leather" },
+                "down":  { "texture": "#leather" },
+                "east":  { "texture": "#leather" },
+                "west":  { "texture": "#leather" }
+            }
+        },
+        {
+            "comment": "Goggle strap band across front of hat",
+            "from": [1, 8, 3],
+            "to":   [15, 10, 5],
+            "faces": {
+                "north": { "texture": "#dark" },
+                "up":    { "texture": "#dark" },
+                "down":  { "texture": "#dark" },
+                "east":  { "texture": "#dark" },
+                "west":  { "texture": "#dark" }
+            }
+        },
+        {
+            "comment": "Left goggle frame",
+            "from": [1, 4, 7],
+            "to":   [7, 10, 9],
+            "faces": {
+                "north": { "texture": "#frame" },
+                "south": { "texture": "#frame" },
+                "up":    { "texture": "#frame" },
+                "down":  { "texture": "#frame" },
+                "east":  { "texture": "#frame" },
+                "west":  { "texture": "#frame" }
+            }
+        },
+        {
+            "comment": "Right goggle frame",
+            "from": [9, 4, 7],
+            "to":   [15, 10, 9],
+            "faces": {
+                "north": { "texture": "#frame" },
+                "south": { "texture": "#frame" },
+                "up":    { "texture": "#frame" },
+                "down":  { "texture": "#frame" },
+                "east":  { "texture": "#frame" },
+                "west":  { "texture": "#frame" }
+            }
+        },
+        {
+            "comment": "Bridge between goggle frames",
+            "from": [7, 6, 7],
+            "to":   [9, 7, 9],
+            "faces": {
+                "north": { "texture": "#frame" },
+                "south": { "texture": "#frame" },
+                "up":    { "texture": "#frame" },
+                "down":  { "texture": "#frame" }
+            }
+        },
+        {
+            "comment": "Left lens",
+            "from": [2, 5, 9],
+            "to":   [6, 9, 10],
+            "faces": {
+                "north": { "texture": "#lens" },
+                "south": { "texture": "#lens" },
+                "up":    { "texture": "#lens" },
+                "down":  { "texture": "#lens" },
+                "east":  { "texture": "#lens" },
+                "west":  { "texture": "#lens" }
+            }
+        },
+        {
+            "comment": "Right lens",
+            "from": [10, 5, 9],
+            "to":   [14, 9, 10],
+            "faces": {
+                "north": { "texture": "#lens" },
+                "south": { "texture": "#lens" },
+                "up":    { "texture": "#lens" },
+                "down":  { "texture": "#lens" },
+                "east":  { "texture": "#lens" },
+                "west":  { "texture": "#lens" }
+            }
+        },
+        {
+            "comment": "Left strap connecting goggles to ear flap",
+            "from": [-1, 6, 7],
+            "to":   [1, 7, 9],
+            "faces": {
+                "north": { "texture": "#dark" },
+                "south": { "texture": "#dark" },
+                "up":    { "texture": "#dark" },
+                "down":  { "texture": "#dark" },
+                "west":  { "texture": "#dark" }
+            }
+        },
+        {
+            "comment": "Right strap",
+            "from": [15, 6, 7],
+            "to":   [17, 7, 9],
+            "faces": {
+                "north": { "texture": "#dark" },
+                "south": { "texture": "#dark" },
+                "up":    { "texture": "#dark" },
+                "down":  { "texture": "#dark" },
+                "east":  { "texture": "#dark" }
+            }
+        }
+    ],
+    "display": {
+        "thirdperson_righthand": {
+            "rotation": [0, -90, 55],
+            "translation": [0, 4, 0.5],
+            "scale": [0.85, 0.85, 0.85]
+        },
+        "firstperson_righthand": {
+            "rotation": [0, -90, 25],
+            "translation": [1.13, 3.2, 1.13],
+            "scale": [0.68, 0.68, 0.68]
+        },
+        "ground": {
+            "translation": [0, 3, 0],
+            "scale": [0.5, 0.5, 0.5]
+        },
+        "gui": {
+            "rotation": [30, 225, 0],
+            "scale": [0.625, 0.625, 0.625]
+        },
+        "fixed": {
+            "rotation": [0, 0, 0],
+            "scale": [0.5, 0.5, 0.5]
+        },
+        "head": {
+            "rotation": [0, 0, 0],
+            "translation": [0, 0, 0],
+            "scale": [1, 1, 1]
+        }
+    }
+}

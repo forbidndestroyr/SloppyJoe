@@ -1,0 +1,7 @@
+{
+  "type": "sloppyjoe:airport",
+  "biomes": "#sloppyjoe:has_structure/airport",
+  "step": "surface_structures",
+  "spawn_overrides": {},
+  "terrain_adaptation": "none"
+}

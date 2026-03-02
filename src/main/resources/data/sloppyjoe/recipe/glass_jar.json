@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "pattern": [
+        "GGG",
+        "G G",
+        "GGG"
+    ],
+    "key": {
+        "G": {"item": "minecraft:glass"}
+    },
+    "result": {
+        "id": "sloppyjoe:glass_jar",
+        "count": 1
+    }
+}

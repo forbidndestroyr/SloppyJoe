@@ -1,0 +1,11 @@
+{
+  "structures": [
+    { "structure": "sloppyjoe:airport", "weight": 1 }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 64,
+    "separation": 16,
+    "salt": 1847291
+  }
+}
