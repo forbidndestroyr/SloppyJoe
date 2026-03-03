@@ -2,6 +2,7 @@ package com.sloppyjoe.item;
 
 import com.sloppyjoe.SloppyJoeMod;
 import net.minecraft.component.type.FoodComponent;
+import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -54,6 +55,12 @@ public class ModItems {
             new HorsePlaneTicketItem(new Item.Settings()
                     .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(SloppyJoeMod.MOD_ID, "horse_plane_ticket")))
                     .maxCount(16)));
+
+    public static final Item GOJO_BLINDFOLD = register("gojo_blindfold",
+            new GojoBlindfoldItem(new Item.Settings()
+                    .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(SloppyJoeMod.MOD_ID, "gojo_blindfold")))
+                    .maxCount(1)
+                    .equippable(EquipmentSlot.HEAD)));
 
     private static Item register(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(SloppyJoeMod.MOD_ID, name), item);

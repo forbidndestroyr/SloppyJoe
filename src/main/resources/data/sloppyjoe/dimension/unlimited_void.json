@@ -1,0 +1,13 @@
+{
+    "type": "sloppyjoe:unlimited_void",
+    "generator": {
+        "type": "minecraft:flat",
+        "settings": {
+            "layers": [],
+            "biome": "sloppyjoe:unlimited_void",
+            "lakes": false,
+            "features": false,
+            "structure_overrides": []
+        }
+    }
+}

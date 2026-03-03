@@ -43,6 +43,9 @@ public class ModItemGroup {
                             entries.add(ModItems.AVIATION_GOGGLES);
                             entries.add(ModItems.PILOT_HELMET);
 
+                            // Domain expansion
+                            entries.add(ModItems.GOJO_BLINDFOLD);
+
                             // Workstation block
                             entries.add(ModBlocks.JOE_COUNTER);
 

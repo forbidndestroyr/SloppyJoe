@@ -7,7 +7,7 @@
         "GGG"
     ],
     "key": {
-        "G": {"item": "minecraft:glass"}
+        "G": "minecraft:glass"
     },
     "result": {
         "id": "sloppyjoe:glass_jar",

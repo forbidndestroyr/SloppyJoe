@@ -5,8 +5,8 @@
         "GLG"
     ],
     "key": {
-        "G": {"item": "minecraft:glass_pane"},
-        "L": {"item": "minecraft:leather"}
+        "G": "minecraft:glass_pane",
+        "L": "minecraft:leather"
     },
     "result": {
         "id": "sloppyjoe:aviation_goggles",

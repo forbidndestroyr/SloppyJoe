@@ -2,8 +2,8 @@
     "type": "minecraft:crafting_shapeless",
     "category": "misc",
     "ingredients": [
-        {"item": "minecraft:bread"},
-        {"item": "minecraft:cooked_beef"}
+        "minecraft:bread",
+        "minecraft:cooked_beef"
     ],
     "result": {
         "id": "sloppyjoe:sloppy_joe",

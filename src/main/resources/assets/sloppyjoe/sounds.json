@@ -1,0 +1,10 @@
+{
+  "domain.unlimited_void_voice": {
+    "sounds": [
+      {
+        "name": "sloppyjoe:domain/unlimited_void_voice",
+        "volume": 1.0
+      }
+    ]
+  }
+}

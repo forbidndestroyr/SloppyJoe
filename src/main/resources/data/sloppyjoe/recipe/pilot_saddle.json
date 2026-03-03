@@ -7,9 +7,9 @@
         "LLL"
     ],
     "key": {
-        "L": {"item": "minecraft:leather"},
-        "I": {"item": "minecraft:iron_ingot"},
-        "S": {"item": "minecraft:saddle"}
+        "L": "minecraft:leather",
+        "I": "minecraft:iron_ingot",
+        "S": "minecraft:saddle"
     },
     "result": {
         "id": "sloppyjoe:pilot_saddle",

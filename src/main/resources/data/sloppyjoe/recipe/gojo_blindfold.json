@@ -2,15 +2,14 @@
     "type": "minecraft:crafting_shaped",
     "category": "equipment",
     "pattern": [
-        "LLL",
-        "LFL"
+        "BBB",
+        "B B"
     ],
     "key": {
-        "L": "minecraft:leather",
-        "F": "minecraft:feather"
+        "B": "minecraft:black_wool"
     },
     "result": {
-        "id": "sloppyjoe:aviator_hat",
+        "id": "sloppyjoe:gojo_blindfold",
         "count": 1
     }
 }

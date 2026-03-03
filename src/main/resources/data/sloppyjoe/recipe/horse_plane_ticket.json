@@ -7,9 +7,9 @@
         " I "
     ],
     "key": {
-        "I": {"item": "minecraft:iron_ingot"},
-        "P": {"item": "minecraft:paper"},
-        "F": {"item": "minecraft:feather"}
+        "I": "minecraft:iron_ingot",
+        "P": "minecraft:paper",
+        "F": "minecraft:feather"
     },
     "result": {
         "id": "sloppyjoe:horse_plane_ticket",

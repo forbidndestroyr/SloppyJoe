@@ -6,8 +6,8 @@
         "ILI"
     ],
     "key": {
-        "I": {"item": "minecraft:iron_ingot"},
-        "L": {"item": "minecraft:leather"}
+        "I": "minecraft:iron_ingot",
+        "L": "minecraft:leather"
     },
     "result": {
         "id": "sloppyjoe:pilot_helmet",

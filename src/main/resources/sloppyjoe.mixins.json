@@ -2,13 +2,18 @@
     "required": true,
     "package": "com.sloppyjoe.mixin",
     "compatibilityLevel": "JAVA_21",
-    "mixins": [],
+    "mixins": [
+        "LivingEntityDamageMixin",
+        "ServerPlayerXpMixin"
+    ],
     "client": [
         "HorseEntityModelMixin",
         "CameraMixin",
         "HorsePlaneSneakMixin",
         "LivingHorseEntityRenderStateMixin",
-        "AbstractHorseEntityRendererMixin"
+        "AbstractHorseEntityRendererMixin",
+        "ClientPlayerDomainMixin",
+        "PlayerEntityModelMixin"
     ],
     "injectors": {
         "defaultRequire": 1

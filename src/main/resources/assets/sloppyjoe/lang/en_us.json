@@ -26,5 +26,13 @@
     "block.sloppyjoe.corrugated_metal": "Corrugated Metal",
     "item.sloppyjoe.corrugated_metal": "Corrugated Metal",
     "block.sloppyjoe.marble_tile": "Marble Tile",
-    "item.sloppyjoe.marble_tile": "Marble Tile"
+    "item.sloppyjoe.marble_tile": "Marble Tile",
+    "item.sloppyjoe.gojo_blindfold": "Gojo's Blindfold",
+    "entity.sloppyjoe.domain_orb": "Domain Orb",
+    "key.sloppyjoe.domain_expand": "Domain Expansion",
+    "key.sloppyjoe.hollow_purple": "Hollow Purple",
+    "entity.sloppyjoe.hollow_purple": "Hollow Purple",
+    "sloppyjoe.domain.unlimited_void": "Unlimited Void",
+    "sloppyjoe.domain.casting": "Expanding domain...",
+    "sloppyjoe.domain.expired": "Domain collapsed."
 }
